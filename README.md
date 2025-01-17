@@ -1,101 +1,98 @@
 # DB_ShoppingList-Website
 
-Un sito web per la gestione collaborativa di una lista della spesa, sviluppato utilizzando **Python**, **JavaScript**, e **HTML**. 
-Il sito può essere molto facilmente adattato a necessità diverse, offrendo una base flessibile per applicazioni simili.
+A collaborative shopping list management website, developed using **Python**, **JavaScript**, and **HTML**. The site can be very easily adapted to different needs, offering a flexible foundation for similar applications.
 
-## Funzionalità principali
+## Main Features
 
-1. **Login Utente**:
-   - Gli utenti possono accedere utilizzando il loro numero di telefono e una password.
-   - Credenziali di esempio per testare l'applicazione:
-     - **Numero di telefono**: `12345678`
+1. **User Login**:
+   - Users can log in using their phone number and a password.
+   - Example credentials for testing the application:
+     - **Phone Number**: `12345678`
      - **Password**: `password`
 
-2. **Gestione Articoli**:
-   - Gli utenti possono **aggiungere** e **rimuovere** articoli dalla lista della spesa.
+2. **Item Management**:
+   - Users can **add** and **remove** items from the shopping list.
 
-3. **Interazione tra Utenti**:
-   - Ogni utente può **approvare** o **rifiutare** gli articoli nella lista, rendendo il processo collaborativo.
+3. **User Interaction**:
+   - Each user can **approve** or **reject** items on the list, making the process collaborative.
 
-4. **Multi-utente**:
-   - Il sito supporta più utenti contemporaneamente, con ogni utente che può contribuire alla lista comune.
+4. **Multi-user Support**:
+   - The site supports multiple users simultaneously, with each user contributing to the shared list.
 
-## Requisiti
+## Requirements
 
 - **Python 3.x**
 - **SQLite**
-- **JavaScript abilitato nel browser**
-- Librerie e moduli necessari (vedi la sezione [Installazione](#installazione))
+- **JavaScript enabled in the browser**
+- Required libraries and modules (see [Installation](#installation))
 
-## Installazione
+## Installation
 
-1. **Clona la repository**:
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/paoloronco/DB_ShoppingList-Website.git
+   git clone https://github.com/your-username/DB_ShoppingList-Website.git
    cd DB_ShoppingList-Website
    ```
 
-2. **Installa le dipendenze**:
-   Assicurati di avere Python installato e utilizza `pip` per installare i pacchetti richiesti:
+2. **Install dependencies**:
+   Ensure Python is installed, then use `pip` to install the required packages:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Crea il database**:
-   Il database verrà creato automaticamente quando esegui l'app per la prima volta grazie alla funzione `create_database()`.
+3. **Create the database**:
+   The database will be created automatically when you run the app for the first time, thanks to the `create_database()` function.
 
-4. **Esegui il server**:
-   Avvia il sito web eseguendo il file `app.py`:
+4. **Run the server**:
+   Start the website by running the `app.py` file:
    ```bash
    python app.py
    ```
 
-5. **Accedi al sito**:
-   Apri il browser e vai all'indirizzo:
+5. **Access the website**:
+   Open your browser and navigate to:
    ```
    http://localhost:5000
    ```
 
-## Struttura del Progetto
+## Project Structure
 
-- `app.py`: File principale che gestisce il backend e le API.
-- `shopping.db`: Database SQLite per la gestione degli articoli.
-- `templates/`: Contiene i file HTML (es. `index.html`, `layout.html`, `shopping_list.html`).
-- `static/js/`: Contiene i file JavaScript (es. `login.js`, `shopping_list.js`).
+- `app.py`: Main file managing the backend and APIs.
+- `shopping.db`: SQLite database for managing items.
+- `templates/`: Contains HTML files (e.g., `index.html`, `layout.html`, `shopping_list.html`).
+- `static/js/`: Contains JavaScript files (e.g., `login.js`, `shopping_list.js`).
 
-## Uso del Sito
+## Using the Website
 
 1. **Login**:
-   - Inserisci le credenziali di esempio o registrati come nuovo utente (se implementato).
-2. **Gestione Lista**:
-   - Aggiungi nuovi articoli inserendo il nome dell'articolo.
-   - Rimuovi articoli dalla lista, se necessario.
-3. **Approva o Rifiuta**:
-   - Esamina gli articoli aggiunti dagli altri utenti e decidi se approvarli o rifiutarli.
+   - Enter the example credentials or register as a new user (if implemented).
+2. **List Management**:
+   - Add new items by entering the item name.
+   - Remove items from the list, if necessary.
+3. **Approve or Reject**:
+   - Review items added by other users and decide whether to approve or reject them.
 
+## Contributing
 
-
-## Contribuire
-
-1. Fai un fork della repository.
-2. Crea un nuovo branch per le modifiche:
+1. Fork the repository.
+2. Create a new branch for your changes:
    ```bash
-   git checkout -b nome-branch
+   git checkout -b branch-name
    ```
-3. Esegui i tuoi aggiornamenti e fai commit:
+3. Make your updates and commit:
    ```bash
-   git commit -m "Descrizione delle modifiche"
+   git commit -m "Description of changes"
    ```
-4. Spingi le modifiche:
+4. Push your changes:
    ```bash
-   git push origin nome-branch
+   git push origin branch-name
    ```
-5. Apri una pull request.
+5. Open a pull request.
 
-## Licenza
+## License
 
-Questa repository è distribuita sotto la licenza MIT. Vedi il file [LICENSE](https://it.wikipedia.org/wiki/Licenza_MIT) per ulteriori dettagli.
+This repository is distributed under the MIT license. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
-Sviluppato con ❤️ per semplificare la gestione delle liste della spesa! 🛒
+Developed with ❤️ to simplify shopping list management! 🛒
