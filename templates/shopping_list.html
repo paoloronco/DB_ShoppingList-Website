@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}Lista della Spesa{% endblock %}
+
+{% block content %}
+<h1>Ciao, {{ nome }}!</h1>
+<p>Benvenuto nella lista della spesa condivisa.</p>
+<p>Puoi aggiungere gli articoli uno alla volta.</p>
+<p>Ogni articolo aggiunto può essere approvato o rifiutato</p>
+<p>Non è possibile aggiungere articoli duplicati: se un articolo è già presente, riceverai un messaggio di errore.</p>
+<p>Gli articoli vengono aggiunti automaticamente in fondo alla lista.</p>
+
+<form id="addItemForm" class="mb-4">
+    <div class="input-group">
+        <input type="text" id="itemName" class="form-control" placeholder="Nome dell'articolo" required>
+        <button class="btn btn-primary" type="submit">Aggiungi</button>
+    </div>
+</form>
+<ul id="shoppingList" class="list-group"></ul>
+
+<a href="{{ url_for('logout') }}" class="btn btn-secondary mt-4">Logout</a>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/shopping_list.js') }}"></script>
+{% endblock %}
